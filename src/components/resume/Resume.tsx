@@ -154,7 +154,24 @@ export function Resume() {
               );
             })}
           </div>
-          <p className="text-center text-xs text-[var(--text-muted)]">Profile content is displayed on this website. No direct resume download is offered.</p>
+          <BentoCard className="p-4 sm:p-6 flex flex-col gap-4" glow>
+            <div className="flex items-center gap-3">
+              <div className="p-2.5 rounded-xl bg-purple-500/10 border border-purple-500/20 text-purple-400"><Eye className="w-5 h-5" /></div>
+              <div>
+                <h3 className="text-xl font-bold text-[var(--text-primary)]">Resume Preview</h3>
+                <p className="text-xs text-[var(--text-muted)]">View my latest resume directly on this page.</p>
+              </div>
+            </div>
+            <div className="overflow-hidden rounded-xl border border-[var(--border-subtle)] bg-white">
+              <iframe
+                src="/dravid_raja_resume%20(1).pdf#toolbar=0&navpanes=0&scrollbar=0"
+                title="Dravid Raja resume preview"
+                className="w-full h-[720px] sm:h-[900px]"
+                loading="lazy"
+              />
+            </div>
+          </BentoCard>
+          <p className="text-center text-xs text-[var(--text-muted)]">Resume preview is provided on this website. Browser controls may vary.</p>
         </div>
       </Container>
     </section>
