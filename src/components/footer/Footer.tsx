@@ -70,13 +70,13 @@ export function Footer() {
                 <span>{personalData.phone}</span>
               </a>
               <a
-                href={personalData.resumeUrl}
+                href="#resume"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-[var(--text-secondary)] hover:text-purple-300 transition-colors pt-1"
               >
                 <FileText className="w-3.5 h-3.5 text-purple-400 shrink-0" />
-                <span>View Approved Resume</span>
+                <span>View Resume</span>
               </a>
             </div>
           </div>
