@@ -9,7 +9,6 @@ export interface PersonalInfo {
   location: string;
   summary: string;
   heroBio: string;
-  resumeUrl: string;
   tags: string[];
 }
 
@@ -26,7 +25,6 @@ export const personalData: PersonalInfo = {
     "MSc Artificial Intelligence & Data Science student at Rathinam Global University, Coimbatore, with a BCA degree from The American College, Madurai. Background in Python development, Flask web applications, SQL databases, and source code quality tooling with CodeHealth-AI.",
   heroBio:
     "Currently pursuing MSc Artificial Intelligence & Data Science at Rathinam Global University, Coimbatore. BCA graduate from The American College, Madurai.",
-  resumeUrl: "/DRAVID-RAJA-N-Resume.pdf",
   tags: [
     "Python",
     "SQL",
