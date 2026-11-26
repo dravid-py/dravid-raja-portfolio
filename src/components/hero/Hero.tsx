@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { UserRound, Mail, Sparkles, ArrowDown } from "lucide-react";
+import { UserRound, Mail, Sparkles } from "lucide-react";
 import { personalData } from "@/data/personal";
 import { Container } from "@/ui/Container";
 
@@ -22,10 +22,10 @@ export function Hero() {
             </div>
             <div className="flex flex-col gap-2 max-w-xl">
               <p className="text-base sm:text-lg text-[var(--text-secondary)] leading-relaxed">
-                Currently pursuing MSc Artificial Intelligence & Data Science at Rathinam Global University, Coimbatore. BCA graduate from The American College, Madurai.
+                MSc Artificial Intelligence & Data Science student and BCA graduate, building practical software with Python, SQL, Flask, and modern web technologies.
               </p>
               <p className="text-xs sm:text-sm text-[var(--text-muted)]">
-                <span className="text-[var(--text-primary)] font-semibold">Technical focus:</span> Python, HTML, CSS, Flask, SQL, Git, GitHub, Visual Studio Code.
+                <span className="text-[var(--text-primary)] font-semibold">Technical focus:</span> Python, SQL, Flask, React, Git, GitHub.
               </p>
             </div>
             <div className="flex flex-wrap gap-2 pt-1">
