@@ -6,7 +6,6 @@ import { Skills } from "@/components/skills/Skills";
 import { CodeHealthAI } from "@/components/project/CodeHealthAI";
 import { Education } from "@/components/education/Education";
 import { Resume } from "@/components/resume/Resume";
-import { GitHubActivity } from "@/components/github/GitHubActivity";
 import { Contact } from "@/components/contact/Contact";
 import { Footer } from "@/components/footer/Footer";
 
@@ -19,7 +18,6 @@ export default function Home() {
       <CodeHealthAI />
       <Education />
       <Resume />
-      <GitHubActivity />
       <Contact />
       <Footer />
     </AppWrapper>
