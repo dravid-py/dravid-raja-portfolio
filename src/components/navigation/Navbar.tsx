@@ -18,7 +18,7 @@ export function Navbar({ onOpenCommand }: NavbarProps) {
   const [activeSection, setActiveSection] = useState<string>("hero");
 
   useEffect(() => {
-    const sectionIds = ["hero", "about", "skills", "project", "education", "resume", "github", "contact"];
+    const sectionIds = ["hero", "about", "skills", "project", "education", "resume", "contact"];
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
       if (window.scrollY < 120) {
