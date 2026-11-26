@@ -32,7 +32,7 @@ export function GitHubActivity() {
               </div>
 
               <a
-                href="https://github.com"
+                href="https://github.com/dravid-py"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-secondary py-2.5 px-4 text-xs self-start sm:self-auto"
