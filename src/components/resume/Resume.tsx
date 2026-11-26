@@ -1,8 +1,8 @@
 import React from "react";
 import {
   UserRound, GraduationCap, Code2, BriefcaseBusiness, ExternalLink,
-  Linkedin, Mail, Phone, MapPin, BrainCircuit, Eye, Languages,
-  Users, Target,
+  Mail, Phone, MapPin, BrainCircuit, Eye, Languages,
+  Users,
 } from "lucide-react";
 import { personalData } from "@/data/personal";
 import { educationData } from "@/data/education";
@@ -68,7 +68,7 @@ export function Resume() {
             </div>
             <div className="flex flex-wrap gap-3 pt-2">
               <a href="https://www.linkedin.com/in/dravid-raja-0623b7293/" target="_blank" rel="noopener noreferrer" className="btn-secondary py-2.5 px-4 text-sm">
-                <Linkedin className="w-4 h-4 text-purple-400" /> LinkedIn <ExternalLink className="w-3 h-3" />
+                <ExternalLink className="w-4 h-4 text-purple-400" /> LinkedIn <ExternalLink className="w-3 h-3" />
               </a>
               <a href="https://github.com/dravid-py" target="_blank" rel="noopener noreferrer" className="btn-secondary py-2.5 px-4 text-sm">
                 <Code2 className="w-4 h-4 text-purple-400" /> GitHub <ExternalLink className="w-3 h-3" />
