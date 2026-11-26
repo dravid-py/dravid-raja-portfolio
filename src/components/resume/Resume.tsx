@@ -1,7 +1,7 @@
 import React from "react";
 import {
   UserRound, GraduationCap, Code2, BriefcaseBusiness, ExternalLink,
-  Github, Linkedin, Mail, Phone, MapPin, BrainCircuit, Eye, Languages,
+  Linkedin, Mail, Phone, MapPin, BrainCircuit, Eye, Languages,
   Users, Target,
 } from "lucide-react";
 import { personalData } from "@/data/personal";
@@ -71,7 +71,7 @@ export function Resume() {
                 <Linkedin className="w-4 h-4 text-purple-400" /> LinkedIn <ExternalLink className="w-3 h-3" />
               </a>
               <a href="https://github.com/dravid-py" target="_blank" rel="noopener noreferrer" className="btn-secondary py-2.5 px-4 text-sm">
-                <Github className="w-4 h-4 text-purple-400" /> GitHub <ExternalLink className="w-3 h-3" />
+                <Code2 className="w-4 h-4 text-purple-400" /> GitHub <ExternalLink className="w-3 h-3" />
               </a>
               <a href={`mailto:${personalData.email}`} className="btn-secondary py-2.5 px-4 text-sm">
                 <Mail className="w-4 h-4 text-purple-400" /> Email
@@ -145,7 +145,7 @@ export function Resume() {
                 <BentoCard key={project.name} className="p-6 sm:p-7 flex flex-col gap-4" glow>
                   <div className="flex items-start justify-between gap-3">
                     <div className="p-3 rounded-xl bg-purple-500/10 border border-purple-500/20 text-purple-400"><ProjectIcon className="w-6 h-6" /></div>
-                    <a href={project.href} target="_blank" rel="noopener noreferrer" className="btn-secondary py-2 px-3 text-xs"><Github className="w-3.5 h-3.5" /> View on GitHub <ExternalLink className="w-3 h-3" /></a>
+                    <a href={project.href} target="_blank" rel="noopener noreferrer" className="btn-secondary py-2 px-3 text-xs"><Code2 className="w-3.5 h-3.5" /> View on GitHub <ExternalLink className="w-3 h-3" /></a>
                   </div>
                   <div><h4 className="text-lg font-bold text-[var(--text-primary)]">{project.name}</h4><p className="text-xs font-semibold text-[var(--text-accent)] mt-1">{project.subtitle}</p></div>
                   <p className="text-sm text-[var(--text-secondary)] leading-relaxed">{project.description}</p>
