@@ -164,9 +164,10 @@ export function Resume() {
             </div>
             <div className="overflow-hidden rounded-xl border border-[var(--border-subtle)] bg-white">
               <iframe
-                src="/dravid_raja_resume%20(1).pdf#toolbar=0&navpanes=0&scrollbar=0"
+                src="/dravid_raja_resume%20(1).pdf#page=1&zoom=page-width&toolbar=0&navpanes=0"
                 title="Dravid Raja resume preview"
-                className="w-full h-[720px] sm:h-[900px]"
+                className="w-full"
+                style={{ height: "900px", minHeight: "900px", display: "block" }}
                 loading="lazy"
               />
             </div>
