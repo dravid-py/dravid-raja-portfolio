@@ -13,6 +13,7 @@ const projects = [
       "A code analysis dashboard that reviews Python and C/C++ source code, identifies risky patterns, predicts bug risk, and provides quality scores and improvement suggestions.",
     technologies: ["Python", "Flask", "SQLite", "Machine Learning"],
     href: "https://github.com/dravid-py?tab=repositories",
+    demo: undefined,
     icon: BrainCircuit,
     image: true,
   },
