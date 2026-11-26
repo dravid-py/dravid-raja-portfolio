@@ -17,10 +17,10 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://dravidraja.dev"),
+  metadataBase: new URL("https://dravid-raja-portfolio.vercel.app"),
   title: "Dravid Raja N | MSc AI & Data Science | Developer Portfolio",
   description:
-    "Official portfolio of Dravid Raja N — MSc Artificial Intelligence & Data Science student, Python developer, and creator of CodeHealth-AI. Explore projects, technical skills, and research background.",
+    "Official portfolio of Dravid Raja N — MSc Artificial Intelligence & Data Science student, Python developer, and creator of CodeHealth-AI and DriveGuard. Explore projects, technical skills, and research background.",
   authors: [{ name: "Dravid Raja N" }],
   creator: "Dravid Raja N",
   keywords: [
@@ -30,6 +30,7 @@ export const metadata: Metadata = {
     "Data Science",
     "Python Developer",
     "CodeHealth-AI",
+    "DriveGuard",
     "Machine Learning",
     "Flask",
     "SQL",
