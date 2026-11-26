@@ -31,7 +31,7 @@ export function PortfolioChat() {
     {
       id: "welcome",
       sender: "bot",
-      text: `Hello! I am Dravid Raja N's portfolio assistant. Ask me about his academic background, technical skills, or featured projects.`,
+      text: `Hello! I am Dravid Raja N's portfolio assistant. Ask me about his academic background, technical skills, CodeHealth-AI, or DriveGuard.`,
       timestamp: "Just now",
     },
   ]);
