@@ -7,13 +7,11 @@ import {
   User,
   Cpu,
   GraduationCap,
-  Languages as LanguagesIcon,
   FileText,
   Mail,
   Sun,
   Moon,
   X,
-  Layers,
   Wrench,
 } from "lucide-react";
 
@@ -69,13 +67,6 @@ export function CommandPalette({ isOpen, onClose }: CommandPaletteProps) {
       action: () => navigateTo("#about"),
     },
     {
-      id: "overview",
-      name: "Go Overview",
-      category: "Navigation",
-      icon: <Layers className="w-4 h-4 text-purple-400" />,
-      action: () => navigateTo("#overview"),
-    },
-    {
       id: "skills",
       name: "Go Skills",
       category: "Navigation",
@@ -84,7 +75,7 @@ export function CommandPalette({ isOpen, onClose }: CommandPaletteProps) {
     },
     {
       id: "project",
-      name: "Go CodeHealth-AI Project",
+      name: "Go Featured Projects",
       category: "Navigation",
       icon: <Cpu className="w-4 h-4 text-purple-400" />,
       action: () => navigateTo("#project"),
@@ -97,21 +88,11 @@ export function CommandPalette({ isOpen, onClose }: CommandPaletteProps) {
       action: () => navigateTo("#education"),
     },
     {
-      id: "languages",
-      name: "Go Languages",
-      category: "Navigation",
-      icon: <LanguagesIcon className="w-4 h-4 text-purple-400" />,
-      action: () => navigateTo("#languages"),
-    },
-    {
       id: "resume",
-      name: "View Resume PDF",
-      category: "Documents",
+      name: "Go Resume Preview",
+      category: "Navigation",
       icon: <FileText className="w-4 h-4 text-purple-400" />,
-      action: () => {
-        onClose();
-        window.open("/DRAVID-RAJA-N-Resume.pdf", "_blank");
-      },
+      action: () => navigateTo("#resume"),
     },
     {
       id: "contact",
