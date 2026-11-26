@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { Cpu, CheckCircle2, Play, Layers } from "lucide-react";
+import { Cpu, CheckCircle2, Play, Layers, ShieldCheck, Code2 } from "lucide-react";
 import { codeHealthProject } from "@/data/projects";
 import { Container } from "@/ui/Container";
 import { SectionTitle } from "@/ui/SectionTitle";
@@ -110,6 +110,81 @@ export function CodeHealthAI() {
           <div>
             <ProjectCaseStudy />
           </div>
+
+          {/* Second Featured Project: DriveGuard */}
+          <BentoCard id="driveguard" className="p-6 sm:p-8 flex flex-col gap-6" glow>
+            <div className="flex flex-col lg:flex-row lg:items-start justify-between gap-5">
+              <div className="flex items-start gap-4">
+                <div className="p-3 rounded-2xl bg-indigo-500/10 border border-indigo-400/25 text-indigo-300 shrink-0">
+                  <ShieldCheck className="w-7 h-7" />
+                </div>
+                <div>
+                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-400/20 text-xs font-semibold text-indigo-300 mb-2">
+                    Featured Project 02 · Privacy-first Computer Vision
+                  </div>
+                  <h3 className="text-2xl sm:text-3xl font-extrabold text-[var(--text-primary)]">
+                    DriveGuard
+                  </h3>
+                  <p className="text-sm font-semibold text-[var(--text-accent)] mt-1">
+                    Drowsiness & Attention Awareness for Computer Users
+                  </p>
+                </div>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                <a
+                  href="https://drive-guard-drowsiness.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-primary py-2.5 px-4 text-xs"
+                >
+                  <Play className="w-3.5 h-3.5" />
+                  <span>Live Demo</span>
+                </a>
+                <a
+                  href="https://github.com/dravid-py/DriveGuard-Drowsiness"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-secondary py-2.5 px-4 text-xs"
+                >
+                  <Code2 className="w-3.5 h-3.5 text-purple-400" />
+                  <span>Source Code</span>
+                </a>
+              </div>
+            </div>
+
+            <p className="text-sm text-[var(--text-secondary)] leading-relaxed max-w-4xl">
+              DriveGuard is a browser-based awareness tool for students, developers, and working professionals during long laptop or desktop sessions. It processes webcam frames locally to identify prolonged eye closure and provide timely visual and audio alerts. It is designed for computer use—not vehicle driving—and does not upload webcam footage to a server.
+            </p>
+
+            <div className="flex flex-wrap gap-2">
+              {["React", "TypeScript", "MediaPipe Tasks Vision", "WebAssembly", "Vite", "Tailwind CSS"] .map((tech) => (
+                <span key={tech} className="tag-chip">{tech}</span>
+              ))}
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+              {[
+                "On-device facial landmark detection and eye-openness analysis",
+                "Temporal detection distinguishes normal blinks from prolonged eye closure",
+                "Configurable visual alerts and audio chimes",
+                "Study and Work modes with locally stored session summaries",
+              ].map((feature) => (
+                <div key={feature} className="p-4 rounded-xl bg-[var(--surface-input)] border border-[var(--border-subtle)] flex items-start gap-2.5">
+                  <CheckCircle2 className="w-4 h-4 text-indigo-300 shrink-0 mt-0.5" />
+                  <span className="text-xs text-[var(--text-secondary)] leading-relaxed">{feature}</span>
+                </div>
+              ))}
+            </div>
+
+            <div className="pt-4 border-t border-[var(--border-subtle)] flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+              <span className="text-xs text-[var(--text-muted)]">
+                Privacy note: webcam frames and facial landmarks are processed in the browser; session preferences and summaries stay in local browser storage.
+              </span>
+              <a href="https://drive-guard-drowsiness.vercel.app" target="_blank" rel="noopener noreferrer" className="text-xs font-semibold text-[var(--text-accent)] hover:underline whitespace-nowrap">
+                Explore DriveGuard ↗
+              </a>
+            </div>
+          </BentoCard>
         </div>
       </Container>
     </section>
