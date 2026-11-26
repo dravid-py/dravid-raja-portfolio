@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { UserRound, Mail, Sparkles } from "lucide-react";
+import { UserRound, Mail, Sparkles, ArrowDown } from "lucide-react";
 import { personalData } from "@/data/personal";
 import { Container } from "@/ui/Container";
 
