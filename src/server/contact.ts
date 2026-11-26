@@ -28,6 +28,6 @@ export async function processContactSubmission(data: ContactFormData): Promise<C
 
   return {
     success: false,
-    message: "The contact form is not connected to email delivery yet. Please contact me directly at ndrav...@gmail.com.",
+    message: "The contact form is not connected to email delivery yet. Please contact me directly at ndravidraja@gmail.com.",
   };
 }
