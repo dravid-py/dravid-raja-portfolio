@@ -22,13 +22,12 @@ export async function processContactSubmission(data: ContactFormData): Promise<C
   const sanitizedEmail = data.email.trim().toLowerCase();
   const sanitizedMessage = data.message.trim().replace(/[<>]/g, "");
 
-  // Safe server-side processing handler
-  // Logs safely on server without exposing credentials or making false delivery claims
-  console.log(`[Contact Submission] From: ${sanitizedName} <${sanitizedEmail}>`);
-  console.log(`[Message Content]: ${sanitizedMessage.substring(0, 100)}...`);
+  // No email provider or persistent message store is configured yet.
+  // Do not claim delivery when the message is only processed by this server.
+  console.info(`[Contact form received but not delivered] ${sanitizedName} <${sanitizedEmail}> (${sanitizedMessage.length} characters)`);
 
   return {
-    success: true,
-    message: "Thank you for reaching out! Your message has been safely received.",
+    success: false,
+    message: "The contact form is not connected to email delivery yet. Please contact me directly at ndrav...@gmail.com.",
   };
 }
