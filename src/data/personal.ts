@@ -17,14 +17,14 @@ export const personalData: PersonalInfo = {
   shortName: "Dravid",
   fullName: "Dravid Raja N",
   degreeTrack: "MSc Artificial Intelligence & Data Science",
-  role: "MSc Artificial Intelligence & Data Science",
+  role: "Aspiring Python Developer · AI & Data Science",
   email: "ndravidraja@gmail.com",
   phone: "+91 63744 43527",
   location: "Tamil Nadu, India",
   summary:
-    "MSc Artificial Intelligence & Data Science student at Rathinam Global University, Coimbatore, with a BCA degree from The American College, Madurai. Background in Python development, Flask web applications, SQL databases, and source code quality tooling with CodeHealth-AI.",
+    "MSc Artificial Intelligence & Data Science student at Rathinam Global University and BCA graduate from The American College, Madurai. I build practical applications using Python, SQL, Flask, React, and computer-vision tools. My projects include CodeHealth-AI and DriveGuard.",
   heroBio:
-    "Currently pursuing MSc Artificial Intelligence & Data Science at Rathinam Global University, Coimbatore. BCA graduate from The American College, Madurai.",
+    "MSc Artificial Intelligence & Data Science student and BCA graduate, building practical software with Python, SQL, Flask, and modern web technologies.",
   tags: [
     "Python",
     "SQL",
