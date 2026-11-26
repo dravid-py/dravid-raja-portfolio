@@ -18,6 +18,7 @@ const FAQ_SUGGESTIONS = [
   "Who is Dravid?",
   "What are your skills?",
   "Tell me about CodeHealth-AI.",
+  "Tell me about DriveGuard.",
   "What are you studying?",
   "How can I contact you?",
   "Can I view your resume?",
@@ -30,7 +31,7 @@ export function PortfolioChat() {
     {
       id: "welcome",
       sender: "bot",
-      text: `Hello! I am Dravid Raja N's portfolio assistant. Ask me about his academic background, technical skills, or the CodeHealth-AI project.`,
+      text: `Hello! I am Dravid Raja N's portfolio assistant. Ask me about his academic background, technical skills, or featured projects.`,
       timestamp: "Just now",
     },
   ]);
@@ -56,8 +57,12 @@ export function PortfolioChat() {
       return `Dravid's verified technical skills include — ${allSkills}.`;
     }
 
+    if (q.includes("driveguard")) {
+      return "DriveGuard is a privacy-focused browser application for drowsiness and attention awareness during computer sessions. It uses MediaPipe for local facial landmark and eye analysis, with visual and audio alerts.";
+    }
+
     if (q.includes("codehealth") || q.includes("project")) {
-      return `${codeHealthProject.title} is a ${codeHealthProject.tagline} built with Python, Flask, HTML, CSS, SQL, and Machine Learning. It performs multi-language static analysis, cyclomatic complexity calculations, ML defect risk prediction, and exports PDF audit reports.`;
+      return `${codeHealthProject.title} is a ${codeHealthProject.tagline} built with Python, Flask, HTML, CSS, SQL, and Machine Learning. It analyses Python and C/C++ code, identifies risky patterns, predicts bug risk, and suggests improvements.`;
     }
 
     if (q.includes("study") || q.includes("education") || q.includes("college") || q.includes("degree")) {
@@ -69,7 +74,7 @@ export function PortfolioChat() {
     }
 
     if (q.includes("resume") || q.includes("cv") || q.includes("download")) {
-      return `You can view and download Dravid's official, approved resume PDF (/DRAVID-RAJA-N-Resume.pdf) in the Resume section on this page.`;
+      return `You can view Dravid's resume in the embedded Resume Preview section on this page.`;
     }
 
     return `I only provide confirmed information directly from Dravid's official portfolio. Feel free to click any of the suggested questions below or check the specific sections on the page!`;
